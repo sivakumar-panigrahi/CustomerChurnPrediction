@@ -5,7 +5,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # 3. Copy only dependency file first (for Docker caching)
-COPY requirements.txt .
+COPY requirements-serve.txt ./requirements.txt
 
 # 4. Install Python dependencies (with no-cache-dir to prevent GitHub Actions memory/disk exhaustion)
 RUN pip install --no-cache-dir --upgrade pip \
