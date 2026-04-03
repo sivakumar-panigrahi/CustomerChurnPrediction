@@ -7,10 +7,9 @@ WORKDIR /app
 # 3. Copy only dependency file first (for Docker caching)
 COPY requirements.txt .
 
-# 4. Install Python dependencies (add curl if you use MLflow local tracking URI)
-RUN pip install --upgrade pip \
-    && pip install -r requirements.txt \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+# 4. Install Python dependencies (with no-cache-dir to prevent GitHub Actions memory/disk exhaustion)
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
 
 # 5. Copy the entire project into the image
 COPY . .
