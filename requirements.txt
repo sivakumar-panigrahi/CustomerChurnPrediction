@@ -33,7 +33,7 @@ gradio
 graphene==3.4.3
 graphql-core==3.2.6
 graphql-relay==3.2.0
-great_expectations==0.15.15
+
 gunicorn==22.0.0
 h11==0.16.0
 idna==3.10
@@ -84,7 +84,7 @@ pycparser==2.22
 pydantic==2.8.2
 pydantic_core==2.20.1
 Pygments==2.19.2
-pyparsing==3.2.3
+pyparsing==2.4.7
 pytest==8.3.2
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
@@ -95,7 +95,7 @@ querystring-parser==1.2.4
 referencing==0.36.2
 requests==2.32.4
 rpds-py==0.27.0
-ruamel.yaml==0.18.14
+ruamel.yaml==0.17.17
 ruamel.yaml.clib==0.2.12
 scikit-learn==1.5.2
 scipy==1.16.1
