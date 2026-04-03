@@ -27,4 +27,4 @@ jobs:
           context: .
           file: ./Dockerfile  # change if your Dockerfile has a different name or path
           push: true
-          tags: sivakumarpanigrahi/telco-fastapilatest:latest
+          tags: sivakumarpanigrahi/telco-fastapilatest
